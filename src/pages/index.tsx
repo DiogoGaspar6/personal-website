@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturedProject from "@/components/FeaturedProject";
@@ -16,7 +17,29 @@ export default function HomePage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-white relative overflow-hidden">
+    <>
+      <Head>
+        <title>Diogo Gaspar - Computer Engineer</title>
+        <meta name="description" content="Portfolio pessoal de Diogo Gaspar - Desenvolvedor de Software especializado em desenvolvimento web, aplicações full-stack e projetos acadêmicos." />
+        <meta name="keywords" content="Diogo Gaspar, desenvolvedor, software developer, portfolio, web development, full-stack, React, Next.js, TypeScript" />
+        <meta name="author" content="Diogo Gaspar" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Diogo Gaspar - Computer Engineer" />
+        <meta property="og:description" content="Portfolio pessoal de Diogo Gaspar - Desenvolvedor de Software" />
+        <meta property="og:site_name" content="Diogo Gaspar Portfolio" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Diogo Gaspar - Computer Engineer" />
+        <meta name="twitter:description" content="Portfolio pessoal de Diogo Gaspar - Desenvolvedor de Software" />
+        
+        {/* Viewport */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-white relative overflow-hidden">
       {/* Background Patterns */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -90,6 +113,7 @@ export default function HomePage() {
         isOpen={isContactModalOpen} 
         onClose={() => setIsContactModalOpen(false)} 
       />
-    </div>
+      </div>
+    </>
   );
 }

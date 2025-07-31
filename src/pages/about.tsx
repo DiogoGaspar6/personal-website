@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import { User, Heart, Coffee, Lightbulb, Target, Rocket } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 import { useState } from "react";
@@ -32,7 +33,14 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-white relative overflow-hidden">
+    <>
+      <Head>
+        <title>Sobre - Diogo Gaspar</title>
+        <meta name="description" content="Conheça Diogo Gaspar - Desenvolvedor de Software apaixonado por inovação, tecnologia e criação de soluções eficientes." />
+        <meta name="keywords" content="sobre, biografia, desenvolvedor, software engineer, inovação, tecnologia, educação" />
+      </Head>
+      
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-white relative overflow-hidden">
       {/* Background Patterns */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -165,6 +173,7 @@ export default function About() {
         isOpen={isContactModalOpen} 
         onClose={() => setIsContactModalOpen(false)} 
       />
-    </div>
+      </div>
+    </>
   );
 }
