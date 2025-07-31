@@ -19,9 +19,34 @@ export default function CVDownloadModal({ isOpen, onClose }: CVDownloadModalProp
     const filePath = `/cv/${fileName}`;
     
     try {
+      // Verificar se o arquivo existe
       const response = await fetch(filePath, { method: 'HEAD' });
       if (response.ok) {
-        window.open(filePath, '_blank');
+        try {
+          const downloadResponse = await fetch(filePath);
+          const blob = await downloadResponse.blob();
+          
+          const url = window.URL.createObjectURL(blob);
+          
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = fileName;
+          link.style.display = 'none';
+          
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          
+          window.URL.revokeObjectURL(url);
+        } catch (fetchError) {
+          const link = document.createElement('a');
+          link.href = filePath;
+          link.download = fileName;
+          link.target = '_blank';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
         
         //* Toast de sucesso
         toast({
@@ -49,16 +74,14 @@ export default function CVDownloadModal({ isOpen, onClose }: CVDownloadModalProp
       toast({
         variant: "destructive",
         title: `${t('cv.downloadError')}`,
-        description: t('cv.downloadUnexpectedError'),
+        description: `${t('cv.downloadErrorDescription')}`,
       });
-      
-      window.open(filePath, '_blank');
     }
   };
 
   const cvOptions = [
     {
-      icon: <FileText size={32} />,
+      icon: <FileText className="w-full h-full" />,
       title: 'CV - Português',
       subtitle: t('cv.portugueseDescription'),
       color: 'from-green-500 to-emerald-600',
@@ -66,7 +89,7 @@ export default function CVDownloadModal({ isOpen, onClose }: CVDownloadModalProp
       action: () => downloadCV('PT')
     },
     {
-      icon: <FileText size={32} />,
+      icon: <FileText className="w-full h-full" />,
       title: 'CV - English',
       subtitle: t('cv.englishDescription'),
       color: 'from-blue-500 to-indigo-600',
@@ -86,21 +109,25 @@ export default function CVDownloadModal({ isOpen, onClose }: CVDownloadModalProp
       {/* Modal */}
       <div className="relative glass-effect rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto animate-scale-in max-h-[90vh] overflow-y-auto">
         {/* Header */}
-        <div className="flex justify-between items-start mb-6 sm:mb-8 animate-slide-in-down">
-          <div className="flex-1 pr-4">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 flex items-center gap-2 sm:gap-3">
-              <Download size={20} className="text-indigo-400 sm:w-6 sm:h-6 md:w-7 md:h-7" />
-              <span className="text-base sm:text-xl md:text-3xl">{t('cv.downloadCV')}</span>
-            </h2>
-            <p className="text-gray-400 text-sm sm:text-base">
-              {t('cv.chooseLanguage')}
-            </p>
+        <div className="flex justify-between items-center mb-6 sm:mb-8 animate-slide-in-down">
+          <div className="flex items-center gap-3 sm:gap-4 flex-1">
+            <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white flex-shrink-0">
+              <Download size={16} className="sm:w-5 sm:h-5 md:w-6 md:h-6" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white truncate">
+                {t('cv.downloadCV')}
+              </h2>
+              <p className="text-gray-400 text-xs sm:text-sm">
+                {t('cv.chooseLanguage')}
+              </p>
+            </div>
           </div>
           <button
             onClick={onClose}
             className="p-2 hover:bg-white/10 rounded-xl transition-colors flex-shrink-0"
           >
-            <X size={20} className="text-gray-400 hover:text-white sm:w-6 sm:h-6" />
+            <X size={16} className="text-gray-400 hover:text-white sm:w-5 sm:h-5" />
           </button>
         </div>
 
@@ -116,8 +143,8 @@ export default function CVDownloadModal({ isOpen, onClose }: CVDownloadModalProp
               <div className={`absolute inset-0 bg-gradient-to-r ${option.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
               
               <div className="relative flex items-center gap-3 sm:gap-4">
-                <div className={`p-3 sm:p-4 rounded-lg sm:rounded-xl bg-gradient-to-r ${option.color} text-white flex-shrink-0`}>
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8">
+                <div className={`p-3 sm:p-4 rounded-lg sm:rounded-xl bg-gradient-to-r ${option.color} text-white flex-shrink-0 flex items-center justify-center`}>
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 flex items-center justify-center">
                     {option.icon}
                   </div>
                 </div>

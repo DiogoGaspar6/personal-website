@@ -16,7 +16,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
   const contactMethods = [
     {
-      icon: <Mail size={24} />,
+      icon: <Mail size={24} className="w-full h-full" />,
       title: 'Email',
       subtitle: 'diogo.gaspar228@gmail.com',
       color: 'from-red-500 to-orange-500',
@@ -24,7 +24,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       copyText: 'diogo.gaspar228@gmail.com'
     },
     {
-      icon: <MessageCircle size={24} />,
+      icon: <MessageCircle size={24} className="w-full h-full" />,
       title: 'WhatsApp',
       subtitle: t('contact.quickMessage'),
       color: 'from-green-500 to-emerald-500',
@@ -32,7 +32,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       copyText: '+351 962 750 868'
     },
     {
-      icon: <Linkedin size={24} />,
+      icon: <Linkedin size={24} className="w-full h-full" />,
       title: 'LinkedIn',
       subtitle: t('contact.professionalNetwork'),
       color: 'from-blue-500 to-blue-600',
@@ -40,7 +40,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       copyText: 'linkedin.com/in/diogoogaspar'
     },
     {
-      icon: <Calendar size={24} />,
+      icon: <Calendar size={24} className="w-full h-full" />,
       title: 'Cal',
       subtitle: t('contact.scheduleCall'),
       color: 'from-purple-500 to-indigo-500',
@@ -78,20 +78,25 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       {/* Modal */}
       <div className="relative glass-effect rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 w-full max-w-sm sm:max-w-md md:max-w-2xl mx-auto animate-scale-in max-h-[90vh] overflow-y-auto">
         {/* Header */}
-        <div className="flex justify-between items-start mb-6 sm:mb-8 animate-slide-in-down">
-          <div className="flex-1 pr-4">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">
-              {t('contact.letsTalk')}
-            </h2>
-            <p className="text-gray-400 text-sm sm:text-base">
-              {t('contact.chooseMethod')}
-            </p>
+        <div className="flex justify-between items-center mb-6 sm:mb-8 animate-slide-in-down">
+          <div className="flex items-center gap-3 sm:gap-4 flex-1">
+            <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white flex-shrink-0">
+              <MessageCircle size={16} className="sm:w-5 sm:h-5 md:w-6 md:h-6" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white truncate">
+                {t('contact.letsTalk')}
+              </h2>
+              <p className="text-gray-400 text-xs sm:text-sm">
+                {t('contact.chooseMethod')}
+              </p>
+            </div>
           </div>
           <button
             onClick={onClose}
             className="p-2 hover:bg-white/10 rounded-xl transition-colors flex-shrink-0"
           >
-            <X size={20} className="text-gray-400 hover:text-white sm:w-6 sm:h-6" />
+            <X size={16} className="text-gray-400 hover:text-white sm:w-5 sm:h-5" />
           </button>
         </div>
 
