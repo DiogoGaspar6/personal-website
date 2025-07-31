@@ -312,3 +312,97 @@ body {
   -webkit-line-clamp: 3;
   line-clamp: 3;
 }
+
+/* Forçar modo escuro sempre - sobrescrever preferências do sistema */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: oklch(0.129 0.042 264.695) !important;
+    --foreground: #ededed !important;
+  }
+  
+  body {
+    background: oklch(0.129 0.042 264.695) !important;
+    color: #ededed !important;
+  }
+  
+  /* Forçar textos brancos */
+  .text-white,
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+  }
+  
+  /* Manter cores de texto cinza */
+  .text-gray-300 {
+    color: #d1d5db !important;
+  }
+  
+  .text-gray-400 {
+    color: #9ca3af !important;
+  }
+  
+  .text-gray-500 {
+    color: #6b7280 !important;
+  }
+  
+  /* Cores de destaque mantidas */
+  .text-indigo-400 {
+    color: #818cf8 !important;
+  }
+  
+  .text-amber-400 {
+    color: #fbbf24 !important;
+  }
+  
+  .text-purple-400 {
+    color: #c084fc !important;
+  }
+  
+  .text-blue-400 {
+    color: #60a5fa !important;
+  }
+  
+  .text-green-400 {
+    color: #4ade80 !important;
+  }
+  
+  /* Efeitos de vidro escuros */
+  .glass-effect {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px) !important;
+  }
+  
+  /* Navegação escura */
+  .bg-white\/10 {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .bg-white\/20 {
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  .bg-white\/5 {
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  /* Bordas escuras */
+  .border-white\/10 {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Manter gradientes originais */
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #6366f1, #8b5cf6) !important;
+    color: white !important;
+  }
+}
+
+/* Forçar sempre modo escuro independente das preferências do sistema */
+html, body {
+  color-scheme: dark !important;
+}
+
+/* Sobrescrever qualquer configuração de modo claro */
+* {
+  color-scheme: dark !important;
+}

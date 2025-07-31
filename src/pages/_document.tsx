@@ -3,8 +3,11 @@ import i18n from '@/i18n';
 
 export default function Document() {
   return (
-    <Html lang={i18n.language || 'en'}>
+    <Html lang={i18n.language || 'en'} className="dark">
       <Head>
+        {/* Forçar modo escuro */}
+        <meta name="color-scheme" content="dark" />
+        
         {/* Favicon */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
@@ -21,7 +24,7 @@ export default function Document() {
         <link rel="dns-prefetch" href="//linkedin.com" />
         <link rel="dns-prefetch" href="//github.com" />
       </Head>
-      <body className="antialiased">
+      <body className="antialiased dark bg-slate-900 text-white">
         <Main />
         <NextScript />
       </body>
