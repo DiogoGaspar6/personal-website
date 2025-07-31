@@ -9,7 +9,7 @@
 
 **Um portfolio moderno e responsivo construído com Next.js, TypeScript e TailwindCSS**
 
-[🌐 Ver Site](https://diogo-gaspar-portfolio.vercel.app) • [📱 Demo Mobile](#features) • [🛠️ Tecnologias](#tech-stack)
+[🌐 Ver Site](https://personal-website-diogogaspar6s-projects.vercel.app) • [🛠️ Tecnologias](#tech-stack)
 
 </div>
 
@@ -50,7 +50,7 @@
 
 ## 🛠️ Tech Stack
 
-<div align="center">
+<div align="center" id="tech-stack">
 
 | Frontend | Styling | Tools | Deployment |
 |----------|---------|-------|------------|
@@ -272,7 +272,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/diogoogaspar)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:diogo.gaspar228@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DiogoGaspar6)
-[![Website](https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://diogo-gaspar-portfolio.vercel.app)
+[![Website](https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://personal-website-diogogaspar6s-projects.vercel.app)
 
 </div>
 
