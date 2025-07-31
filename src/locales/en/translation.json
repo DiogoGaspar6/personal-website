@@ -1,0 +1,156 @@
+{
+  "home": {
+    "welcome": "Welcome to my personal website",
+    "intro": "I'm a developer passionate about creating innovative digital solutions that make a difference in people's lives.",
+    "developer": "Full Stack Developer",
+    "downloadCV": "Download CV",
+    "updateDate": "Last update: ",
+    "contact": "Get in Touch",
+    "viewAllProjects": "View All Projects",
+    "readyToCreate": "Ready to create something",
+    "incredible": "incredible",
+    "readyDescription": "I'm always interested in challenging opportunities and innovative projects. Let's talk about how I can help bring your ideas to life.",
+    "allRightsReserved": "All rights reserved",
+    "lastProjectDate": "2025",
+    "lastProjectType": "Academic Project",
+    "lastProjectTitle": "Gesture Plugin",
+    "lastProjectDescription": "An innovative plugin that allows controlling the mouse cursor through hand gestures using computer vision and machine learning.",
+    "featureCursorControl": "Cursor Control",
+    "featureGestureRecognition": "Gesture Recognition",
+    "viewCode": "View Code",
+    "viewProject": "View Project"
+  },
+  "navbar": {
+    "about": "About",
+    "projects": "Projects"
+  },
+  "stats": {
+    "yearsExperience": "Years of Experience",
+    "completedProjects": "Completed Projects",
+    "technologies": "Technologies",
+    "satisfaction": "Satisfaction",
+    "technologiesAndSkills": "Technologies &",
+    "skills": "Skills",
+    "skillsDescription": "Tools and technologies I use to create exceptional digital experiences",
+    "techStack": "TECH STACK",
+    "advanced": "Advanced",
+    "intermediate": "Intermediate",
+    "intermediatePlus": "Intermediate+",
+    "beginner": "Beginner+",
+    "years": "years",
+    "year": "year",
+    "months": "months"
+  },
+  "projects": {
+    "portfolio": "Portfolio",
+    "myProjects": "My",
+    "projectsTitle": "Projects",
+    "projectsDescription": "A collection of projects I've developed, from modern web applications to innovative solutions using artificial intelligence.",
+    "all": "All",
+    "academic": "Academic",
+    "webDevelopment": "Web Development",
+    "fullStack": "Full Stack",
+    "frontend": "Frontend",
+    "featuredProject": "Featured Project",
+    "viewDemo": "View Demo",
+    "viewCode": "Code",
+    "sourceCode": "Source Code",
+    "demo": "Demo",
+    "code": "Code",
+    "haveProjectInMind": "Have a project in",
+    "mind": "mind",
+    "collaborationDescription": "I'm always interested in new challenges and collaboration opportunities. Let's work together to create something extraordinary.",
+    "demoNotAvailable": "Demo not yet available",
+    "codeNotAvailable": "Code not yet publicly available",
+    "contactForMoreInfo": "Contact me for more information.",
+    "gesturePlugin": {
+      "title": "Gesture Plugin",
+      "description": "Innovative plugin that allows controlling the mouse cursor through hand gestures using computer vision and machine learning."
+    },
+    "walletTracker": {
+      "title": "Personal Wallet Tracker",
+      "description": "Personal investment management application, built with a family member."
+    },
+    "cineWorld": {
+      "title": "CineWorld",
+      "description": "Website containing information about movies in a MongoDB database and a chatbot that answers questions about movies with three types of questions, using the Gemini API."
+    },
+    "silentWar": {
+      "title": "Silent War",
+      "description": "Silent War is a web application that allows authenticated users to participate in real-time auctions by submitting bids that are instantly reflected."
+    },
+    "licenPlateRecognition": {
+      "title": "License Plate Recognition",
+      "description": "Web application for license plate recognition using computer vision and machine learning (YOLO) and save in a excel file."
+    }
+  },
+  "about": {
+    "aboutMe": "About Me",
+    "hello": "Hello, I'm",
+    "aboutDescription": "A developer passionate about creating innovative digital solutions that make a difference. I combine creativity with technology to transform ideas into reality.",
+    "myJourney": "My Journey",
+    "journeyDescription1": "I started my programming journey during my Computer Engineering degree at Instituto Politécnico de Viana do Castelo, where I discovered my passion for creating innovative technological solutions.",
+    "journeyDescription2": "Since then, I've specialized in full-stack development, with a special focus on modern technologies like React, Next.js and Python. Each project is an opportunity to learn something new and expand my horizons.",
+    "journeyDescription3": "When I'm not coding, I enjoy exploring new technologies and practicing physical activities like going to the gym.",
+    "funFacts": "Fun Facts",
+    "education": "Education",
+    "computerEngineering": "Computer Engineering",
+    "instituteName": "Instituto Politécnico de Viana do Castelo",
+    "myValues": "My Values",
+    "valuesDescription": "Principles that guide my work and approach to development",
+    "innovation": "Innovation",
+    "innovationDescription": "Always looking for creative solutions and emerging technologies",
+    "precision": "Precision",
+    "precisionDescription": "Focus on details and quality in every line of code",
+    "passion": "Passion",
+    "passionDescription": "Genuine love for development and creating unique experiences",
+    "performance": "Performance",
+    "performanceDescription": "Optimization and efficiency are fundamental in all projects",
+    "facts": {
+      "sport": "I have played football and karate",
+      "firstProject": "First project: Simple website",
+      "favoriteLanguage": "Favorite language: TypeScript",
+      "preferredEditor": "Preferred editor: VS Code"
+    }
+  },
+  "contact": {
+    "chooseMethod": "Choose your preferred contact method:",
+    "responseTime": "Typical response time:",
+    "letsTalk": "Let's talk!",
+    "quickMessage": "Quick message",
+    "professionalNetwork": "Professional network",
+    "scheduleCall": "Schedule meeting",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "copySuccess": "Copied!",
+    "copySuccessDescription": "was copied to clipboard.",
+    "copyError": "Copy error",
+    "copyErrorDescription": "Could not copy text. Please try again."
+  },
+  "cv": {
+    "downloadCV": "Download CV",
+    "chooseLanguage": "Choose your CV language:",
+    "portugueseDescription": "Versão completa em português",
+    "englishDescription": "Full version in English",
+    "bothVersionsAvailable": "Both versions are always up to date",
+    "downloadStarted": "Download started!",
+    "downloadStartedDescription": "is being downloaded.",
+    "downloadError": "Download error",
+    "downloadErrorDescription": "is not available at the moment.",
+    "downloadUnexpectedError": "An unexpected error occurred. Please try again later.",
+    "portuguese": "Portuguese",
+    "english": "English"
+  },
+  "featured": {
+    "featuredWork": "Featured Work",
+    "lastProject": "Latest Project",
+    "lastProjectDescription": "This project was developed during my Computer Engineering degree at Instituto Politécnico de Viana do Castelo. The goal was to develop a plugin where users could simulate their mouse through gestures, enabling clicking, scrolling, and much more.",
+    "exploring": "Exploring the latest technologies and innovations",
+    "academicProject": "Academic Project",
+    "mainFeatures": "Main Features:",
+    "cursorControl": "Cursor control through gestures",
+    "clickDetection": "Click detection through gestures",
+    "smartScroll": "Smart scrolling",
+    "viewProject": "View Project"
+  }
+}

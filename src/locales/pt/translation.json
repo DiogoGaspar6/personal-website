@@ -1,0 +1,158 @@
+{
+  "home": {
+    "welcome": "Bem-vindo ao meu site pessoal",
+    "intro": "Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras que fazem a diferença na vida das pessoas.",
+    "developer": "Full Stack Developer",
+    "downloadCV": "Download CV",
+    "updateDate": "Última atualização: ",
+    "contact": "Entrar em Contacto",
+    "viewAllProjects": "Ver Todos os Projetos",
+    "readyToCreate": "Pronto para criar algo",
+    "incredible": "incrível",
+    "readyDescription": "Tenho sempre interesse em oportunidades desafiantes e projetos inovadores. Vamos conversar sobre como posso ajudar a tornar as suas ideias realidade.",
+    "allRightsReserved": "Todos os direitos reservados",
+    "lastProjectDate": "2025",
+    "lastProjectType": "Projeto Académico",
+    "lastProjectTitle": "Gesture Plugin",
+    "lastProjectDescription": "Um plugin inovador que permite controlar o cursor do rato através de gestos das mãos usando computer vision e machine learning.",
+    "featureCursorControl": "Controle de Cursor",
+    "featureGestureRecognition": "Reconhecimento de Gestos",
+    "viewCode": "Ver Código",
+    "viewProject": "Ver Projeto"
+  },
+  "navbar": {
+    "about": "Sobre",
+    "projects": "Projetos"
+  },
+  "stats": {
+    "yearsExperience": "Anos de Experiência",
+    "completedProjects": "Projetos Concluídos",
+    "technologies": "Tecnologias",
+    "satisfaction": "Satisfação",
+    "technologiesAndSkills": "Tecnologias &",
+    "skills": "Skills",
+    "skillsDescription": "Ferramentas e tecnologias que uso para criar experiências digitais excepcionais",
+    "techStack": "TECH STACK",
+    "advanced": "Avançado",
+    "intermediate": "Intermédio",
+    "intermediatePlus": "Intermédio+",
+    "beginner": "Iniciante+",
+    "years": "anos",
+    "year": "ano",
+    "months": "meses"
+  },
+  "projects": {
+    "portfolio": "Portfolio",
+    "myProjects": "Meus",
+    "projectsTitle": "Projetos",
+    "projectsDescription": "Uma coleção dos projetos que desenvolvi, desde aplicações web modernas a soluções inovadoras usando inteligência artificial.",
+    "all": "Todos",
+    "academic": "Académico",
+    "webDevelopment": "Web Development",
+    "fullStack": "Full Stack",
+    "frontend": "Frontend",
+    "featuredProject": "Projeto em Destaque",
+    "viewDemo": "Ver Demo",
+    "viewCode": "Código",
+    "sourceCode": "Código Fonte",
+    "demo": "Demo",
+    "code": "Código",
+    "haveProjectInMind": "Tem um projeto em",
+    "mind": "mente",
+    "collaborationDescription": "Estou sempre interessado em novos desafios e oportunidades de colaboração. Vamos trabalhar juntos para criar algo extraordinário.",
+    "demoNotAvailable": "Demo ainda não disponível",
+    "codeNotAvailable": "Código ainda não disponível publicamente",
+    "contactForMoreInfo": "Entre em contacto para mais informações.",
+    "gesturePlugin": {
+      "title": "Gesture Plugin",
+      "description": "Plugin inovador que permite controlar o cursor do rato através de gestos das mãos usando computer vision e machine learning."
+    },
+    "walletTracker": {
+      "title": "Personal Wallet Tracker",
+      "description": "Aplicação de gestão de investimentos pessoais, feito com um familiar meu."
+    },
+    "cineWorld": {
+      "title": "CineWorld",
+      "description": "Website onde contém informações sobre filmes numa base de dados MongoDB e contém um chatbot que responde a perguntas sobre filmes com três tipos de perguntas, com a api da Gemini."
+    },
+    "silentWar": {
+      "title": "Silent War",
+      "description": "Silent War é uma aplicação web que permite aos utilizadores autenticados participar em leilões em tempo real, submetendo lances que são refletidos instantaneamente."
+    },
+    "licenPlateRecognition": {
+      "title": "Reconhecimento de Matrículas",
+      "description": "Aplicação que utiliza machine learning (YOLO) para reconhecer matrículas de veículos em tempo real, com o telemovel e guarda num ficheiro excel"
+    }
+  },
+  "about": {
+    "aboutMe": "Sobre Mim",
+    "hello": "Olá, sou o",
+    "aboutDescription": "Um desenvolvedor apaixonado por criar soluções digitais inovadoras que fazem a diferença. Combino criatividade com tecnologia para transformar ideias em realidade.",
+    "myJourney": "A Minha Jornada",
+    "journeyDescription1": "Comecei a minha jornada na programação durante a licenciatura em Engenharia Informática no Instituto Politécnico de Viana do Castelo, onde descobri a minha paixão por criar soluções tecnológicas inovadoras.",
+    "journeyDescription2": "Desde então, tenho-me especializado em desenvolvimento full-stack, com foco especial em tecnologias modernas como React, Next.js e Python. Cada projeto é uma oportunidade de aprender algo novo e expandir os meus horizontes.",
+    "journeyDescription3": "Quando não estou a programar, gosto de explorar novas tecnologias e praticar atividades físicas, como o ginásio.",
+    "funFacts": "Curiosidades",
+    "education": "Educação",
+    "secondaryEducation": "Ensino Secundário",
+    "schoolName": "Escola Secundária de Viana do Castelo",
+    "computerEngineering": "Licenciatura em Engenharia Informática",
+    "instituteName": "Instituto Politécnico de Viana do Castelo",
+    "myValues": "Os Meus Valores",
+    "valuesDescription": "Princípios que guiam o meu trabalho e a minha abordagem ao desenvolvimento",
+    "innovation": "Inovação",
+    "innovationDescription": "Sempre em busca de soluções criativas e tecnologias emergentes",
+    "precision": "Precisão",
+    "precisionDescription": "Foco em detalhes e qualidade em cada linha de código",
+    "passion": "Paixão",
+    "passionDescription": "Amor genuíno pelo desenvolvimento e criação de experiências únicas",
+    "performance": "Performance",
+    "performanceDescription": "Optimização e eficiência são fundamentais em todos os projetos",
+    "facts": {
+      "sport": "Já pratiquei futebol e karate",
+      "firstProject": "Primeiro projeto: um Website simples",
+      "favoriteLanguage": "Linguagem favorita: TypeScript",
+      "preferredEditor": "Editor preferido: VS Code"
+    }
+  },
+  "contact": {
+    "chooseMethod": "Escolha o método de contacto que prefere:",
+    "responseTime": "Tempo de resposta típico:",
+    "letsTalk": "Vamos conversar!",
+    "quickMessage": "Mensagem rápida",
+    "professionalNetwork": "Rede profissional",
+    "scheduleCall": "Agendar reunião",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "copySuccess": "Copiado!",
+    "copySuccessDescription": "foi copiado para a área de transferência.",
+    "copyError": "Erro ao copiar",
+    "copyErrorDescription": "Não foi possível copiar o texto. Tente novamente."
+  },
+  "cv": {
+    "downloadCV": "Download CV",
+    "chooseLanguage": "Escolha o idioma do seu CV:",
+    "portugueseDescription": "Versão completa em português",
+    "englishDescription": "Full version in English",
+    "bothVersionsAvailable": "Ambas as versões estão sempre atualizadas",
+    "downloadStarted": "Download iniciado!",
+    "downloadStartedDescription": "está a ser instalado.",
+    "downloadError": "Erro no download",
+    "downloadErrorDescription": "não está disponível no momento.",
+    "downloadUnexpectedError": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
+    "portuguese": "português",
+    "english": "inglês"
+  },
+  "featured": {
+    "featuredWork": "Featured Work",
+    "lastProject": "Último Projeto",
+    "lastProjectDescription": "Este projeto foi realizado na minha licenciatura de Engenharia Informática no Instituto Politecnico de Viana do Castelo. O objetivo do projeto foi desenvolver um plugin onde o utilizador através de gestos conseguia simular o seu rato onde conseguia clicar, fazer scroll e muito mais.",
+    "exploring": "Explorando as mais recentes tecnologias e inovações",
+    "academicProject": "Projeto Académico",
+    "mainFeatures": "Principais Features:",
+    "cursorControl": "Controlo do cursor através de gestos",
+    "clickDetection": "Detecção de cliques por gestos",
+    "smartScroll": "Scroll inteligente",
+    "viewProject": "Ver Projeto"
+  }
+}
