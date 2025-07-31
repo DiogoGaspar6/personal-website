@@ -24,16 +24,34 @@ export default function HomePage() {
         <meta name="keywords" content="Diogo Gaspar, desenvolvedor, software developer, portfolio, web development, full-stack, React, Next.js, TypeScript" />
         <meta name="author" content="Diogo Gaspar" />
         
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://personal-website-diogogaspar6s-projects.vercel.app" />
+        
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Diogo Gaspar - Computer Engineer" />
-        <meta property="og:description" content="Portfolio pessoal de Diogo Gaspar - Desenvolvedor de Software" />
+        <meta property="og:url" content="https://personal-website-diogogaspar6s-projects.vercel.app" />
+        <meta property="og:title" content="Diogo Gaspar - Computer Engineer & Software Developer" />
+        <meta property="og:description" content="Portfolio pessoal de Diogo Gaspar - Desenvolvedor de Software especializado em desenvolvimento web, aplicações full-stack e projetos acadêmicos." />
+        <meta property="og:image" content="https://personal-website-diogogaspar6s-projects.vercel.app/images/personalWallet.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Diogo Gaspar Portfolio" />
+        <meta property="og:locale" content="pt_PT" />
+        
+        {/* LinkedIn specific */}
+        <meta property="og:image:alt" content="Diogo Gaspar - Computer Engineer & Software Developer Portfolio" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Diogo Gaspar - Computer Engineer" />
-        <meta name="twitter:description" content="Portfolio pessoal de Diogo Gaspar - Desenvolvedor de Software" />
+        <meta name="twitter:url" content="https://personal-website-diogogaspar6s-projects.vercel.app" />
+        <meta name="twitter:title" content="Diogo Gaspar - Computer Engineer & Software Developer" />
+        <meta name="twitter:description" content="Portfolio pessoal de Diogo Gaspar - Desenvolvedor de Software especializado em desenvolvimento web, aplicações full-stack e projetos acadêmicos." />
+        <meta name="twitter:image" content="https://personal-website-diogogaspar6s-projects.vercel.app/images/personalWallet.png" />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="Portuguese" />
+        <meta name="revisit-after" content="7 days" />
         
         {/* Viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
