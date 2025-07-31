@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Mail, MessageCircle, Linkedin, Github, Calendar, Copy } from 'lucide-react';
+import { X, Mail, MessageCircle, Linkedin, Calendar, Copy } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useToast } from '@/lib/use-toast';
 

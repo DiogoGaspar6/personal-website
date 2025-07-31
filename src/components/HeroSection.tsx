@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
-import WavingHand from "@/animations/WavingHand";
 import { useState } from 'react';
 import CVDownloadModal from '@/components/CVDownloadModal';
 
@@ -36,7 +35,7 @@ export default function HeroSection() {
           <div className="text-lg sm:text-xl md:text-2xl text-gray-300 font-light max-w-2xl mx-auto animate-fade-in animate-delay-400 px-2">
             <span className="font-mono text-indigo-400">const</span>
             <span className="text-white"> developer = </span>
-            <span className="text-amber-400">"{t('home.developer')}"</span>
+            <span className="text-amber-400">&quot;{t('home.developer')}&quot;</span>
           </div>
         </div>
 
