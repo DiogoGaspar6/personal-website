@@ -1,5 +1,17 @@
 import * as React from "react"
 
+// Types
+export interface ToastProps {
+  variant?: "default" | "destructive" | "success"
+  size?: "default" | "sm"
+  open?: boolean
+  onOpenChange?: (open: boolean) => void
+}
+
+export interface ToastActionElement {
+  altText: string
+}
+
 const TOAST_LIMIT = 1
 const TOAST_REMOVE_DELAY = 1000000
 
@@ -182,15 +194,3 @@ function useToast() {
 }
 
 export { useToast, toast }
-
-// Types
-export interface ToastProps {
-  variant?: "default" | "destructive" | "success"
-  size?: "default" | "sm"
-  open?: boolean
-  onOpenChange?: (open: boolean) => void
-}
-
-export interface ToastActionElement {
-  altText: string
-}

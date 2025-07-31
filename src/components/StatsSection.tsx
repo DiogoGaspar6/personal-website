@@ -1,4 +1,4 @@
-import { Code2, Database, Smartphone, Globe, Zap, Users } from 'lucide-react';
+import { Code2, Database, Globe, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function StatsSection() {

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
-import { ExternalLink, Github, Calendar, Tag, Code2, Zap } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink, Github, Calendar, Code2, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import ContactModal from "@/components/ContactModal";
@@ -177,9 +178,11 @@ export default function Projects() {
             <div className="glass-effect rounded-2xl sm:rounded-3xl overflow-hidden card-hover">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden order-2 lg:order-1">
-                  <img
+                  <Image
                     src={projects[0].image}
                     alt="Featured Project Screenshot"
+                    width={600}
+                    height={400}
                     className="w-full h-64 sm:h-80 lg:h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
@@ -248,9 +251,11 @@ export default function Projects() {
                 className={`glass-effect rounded-xl sm:rounded-2xl overflow-hidden card-hover group h-auto sm:h-[480px] flex flex-col animate-slide-in-up animate-delay-${700 + index * 100}`}
               >
                 <div className="aspect-video bg-gradient-to-br from-indigo-500/20 to-purple-600/20 flex items-center justify-center relative overflow-hidden">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    width={400}
+                    height={250}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

@@ -30,10 +30,10 @@ export const DropdownMenu = ({ children }: { children: React.ReactNode }) => {
       {React.Children.map(children, (child) => {
         if (!React.isValidElement(child)) return child;
         if (child.type === DropdownMenuTrigger) {
-          return React.cloneElement(child as React.ReactElement<any>, { open, toggleOpen });
+          return React.cloneElement(child as React.ReactElement<{ open?: boolean; toggleOpen?: () => void }>, { open, toggleOpen });
         }
         if (child.type === DropdownMenuContent) {
-          return open ? React.cloneElement(child as React.ReactElement<any>, { close }) : null;
+          return open ? React.cloneElement(child as React.ReactElement<{ close?: () => void }>, { close }) : null;
         }
         return child;
       })}
@@ -57,11 +57,11 @@ export const DropdownMenuTrigger = ({ asChild, children, open, toggleOpen }: { a
   );
 };
 
-export const DropdownMenuContent = ({ align = 'start', children }: { align?: 'start' | 'end'; children: React.ReactNode | ((close: () => void) => React.ReactNode) }) => {
+export const DropdownMenuContent = ({ align = 'start', children, close }: { align?: 'start' | 'end'; children: React.ReactNode | ((close: () => void) => React.ReactNode); close?: () => void }) => {
   const alignment = align === 'end' ? 'right-0' : 'left-0';
   return (
     <div className={`absolute mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50 ${alignment}`}>
-      <div className="py-1">{typeof children === 'function' ? children(close) : children}</div>
+      <div className="py-1">{typeof children === 'function' ? children(close || (() => {})) : children}</div>
     </div>
   );
 };
