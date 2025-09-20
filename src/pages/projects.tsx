@@ -40,8 +40,8 @@ export default function Projects() {
       year: "2024",
       featured: true,
       links: {
-        demo: "https://drive.google.com/file/d/1wE-butQn79Wj0t8LZTckzQ1s7S0yvPRG/view?usp=sharing",
-        github: "#",
+        demo: "#",
+        github: "https://github.com/P4-Gestures-2425/GesturePlugin",
       },
     },
     {

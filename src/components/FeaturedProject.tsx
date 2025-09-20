@@ -1,9 +1,22 @@
 import { useTranslation } from 'react-i18next';
 import { ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import Image from 'next/image';
+import { toast } from '@/lib/use-toast';
 
 export default function FeaturedProject() {
   const { t } = useTranslation();
+  
+  const handleLinkClick = (url: string, type: 'demo' | 'github') => {
+    if (url === "#") {
+      toast({
+        variant: "default",
+        title: "🚧 " + t(type === 'demo' ? 'projects.demoNotAvailable' : 'projects.codeNotAvailable'),
+        description: t('projects.contactForMoreInfo'),
+      });
+    } else {
+      window.open(url, "_blank");
+    }
+  };
 
   return (
     <section className="py-20 px-4">
@@ -91,11 +104,11 @@ export default function FeaturedProject() {
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <button className="flex items-center justify-center gap-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                  <button className="flex items-center justify-center gap-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl" onClick={() => handleLinkClick('#', 'demo')}>
                     <ExternalLink size={18} />
                     {t('home.viewProject')}
                   </button>
-                  <button className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+                  <button className="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105" onClick={() => handleLinkClick('https://github.com/P4-Gestures-2425/GesturePlugin', 'github')}>
                     <Github size={18} />
                     {t('home.viewCode')}
                   </button>
