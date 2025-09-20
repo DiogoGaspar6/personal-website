@@ -15,7 +15,7 @@ export default function CVDownloadModal({ isOpen, onClose }: CVDownloadModalProp
   if (!isOpen) return null;
 
   const downloadCV = async (language: 'PT' | 'EN') => {
-    const fileName = `CV-DiogoGaspar-${language}.pdf`;
+    const fileName = `CV-DiogoGaspar-${language}-v2.pdf`;
     const filePath = `/cv/${fileName}`;
     
     try {
